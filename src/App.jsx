@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Badge from "./components/Badge.jsx";
 import Banner from "./components/Banner/index.jsx";
+import Card from "./components/Card/index.jsx";
 
 function App() {
   return (
@@ -78,6 +79,17 @@ function App() {
             quos debitis at quasi?
           </Banner.Text>
         </Banner>
+      </section>
+
+      {/* Card Component  */}
+      <section className="section--card">
+        <Card>
+          <Card.Title>Easy Deployment</Card.Title>
+          <Card.Text>
+            Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
+            magna sit morbi lobortis.
+          </Card.Text>
+        </Card>
       </section>
     </>
   );
