@@ -97,3 +97,21 @@
   color: #9d174d;
   background: #fce7f3;
 }
+
+/* Badge Component */
+.section--banner {
+  margin-top: 4em;
+}
+
+.banner {
+  display: flex;
+  gap: 0.75em;
+  text-align: left;
+  padding: 1em;
+}
+
+.banner--title {
+}
+
+.banner-text {
+}

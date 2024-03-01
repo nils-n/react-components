@@ -3,11 +3,14 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Badge from "./components/Badge.jsx";
+import Banner from "./components/Banner/index.jsx";
 
 function App() {
   return (
     <>
       <h1>Component Library</h1>
+
+      {/* Badge Component  */}
       <section className="section--badges">
         <Badge color="red">Badge</Badge>
         <Badge color="yellow">Badge</Badge>
@@ -39,6 +42,18 @@ function App() {
         <Badge color="pink" shape="pill">
           Badge
         </Badge>
+      </section>
+
+      {/* Banner Component  */}
+      <section className="section--banner">
+        <Banner status="success">
+          <Banner.Title>Congratulations!</Banner.Title>
+          <Banner.Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, rerum sequi dolorum id nesciunt ducimus praesentium
+            quos debitis at quasi?
+          </Banner.Text>
+        </Banner>
       </section>
     </>
   );
