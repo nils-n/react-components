@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <h1>Component Library</h1>
-
       {/* Badge Component  */}
       <section className="section--badges">
         <Badge color="red">Badge</Badge>
@@ -44,7 +43,6 @@ function App() {
           Badge
         </Badge>
       </section>
-
       {/* Banner Component  */}
       <section className="section--banner">
         <Banner status="success">
@@ -80,7 +78,6 @@ function App() {
           </Banner.Text>
         </Banner>
       </section>
-
       {/* Card Component  */}
       <section className="section--card">
         <Card>
