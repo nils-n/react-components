@@ -40,3 +40,60 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Badge Component */
+.section--badges {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  padding: 1em 0;
+}
+
+.badge {
+  padding: 0.125em 0.75em;
+  width: max-content;
+  min-width: 4.18rem;
+  min-height: 1.5em;
+  border-radius: 0.25em;
+}
+
+.pill {
+  border-radius: 0.75em;
+}
+
+.gray {
+  color: #1f2937;
+  background: #f3f4f6;
+}
+.red {
+  color: #991b1b;
+  background-color: #fee2e2;
+}
+.yellow {
+  color: #92400e;
+  background-color: #fef3c7;
+}
+
+.green {
+  color: #065f46;
+  background: #d1fae5;
+}
+
+.blue {
+  color: #1e40af;
+  background: #dbeafe;
+}
+
+.indigo {
+  color: #3730a3;
+  background: #e0e7ff;
+}
+.purple {
+  color: #5b21b6;
+  background: #ede9fe;
+}
+
+.pink {
+  color: #9d174d;
+  background: #fce7f3;
+}
