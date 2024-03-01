@@ -54,6 +54,30 @@ function App() {
             quos debitis at quasi?
           </Banner.Text>
         </Banner>
+        <Banner status="warning">
+          <Banner.Title>Attention</Banner.Title>
+          <Banner.Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, rerum sequi dolorum id nesciunt ducimus praesentium
+            quos debitis at quasi?
+          </Banner.Text>
+        </Banner>
+        <Banner status="danger">
+          <Banner.Title>There is a problem with your application</Banner.Title>
+          <Banner.Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, rerum sequi dolorum id nesciunt ducimus praesentium
+            quos debitis at quasi?
+          </Banner.Text>
+        </Banner>
+        <Banner status="neutral">
+          <Banner.Title>Update available</Banner.Title>
+          <Banner.Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, rerum sequi dolorum id nesciunt ducimus praesentium
+            quos debitis at quasi?
+          </Banner.Text>
+        </Banner>
       </section>
     </>
   );
