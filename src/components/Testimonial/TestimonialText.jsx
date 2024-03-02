@@ -6,7 +6,7 @@ export default function TestimonialText({ children }) {
       <div className="testimonial--icon">
         <FaQuoteLeft />
       </div>
-      {children}
+      <div>{children}</div>
     </div>
   );
 }
