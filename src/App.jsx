@@ -5,6 +5,7 @@ import "./App.css";
 import Badge from "./components/Badge.jsx";
 import Banner from "./components/Banner/index.jsx";
 import Card from "./components/Card/index.jsx";
+import Testimonial from "./components/Testimonial/index.jsx";
 
 function App() {
   return (
@@ -78,6 +79,7 @@ function App() {
           </Banner.Text>
         </Banner>
       </section>
+
       {/* Card Component  */}
       <section className="section--card">
         <Card>
@@ -87,6 +89,30 @@ function App() {
             magna sit morbi lobortis.
           </Card.Text>
         </Card>
+
+        <Card>
+          <Card.Title>Easy Deployment</Card.Title>
+          <Card.Text>
+            Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
+            magna sit morbi lobortis.
+          </Card.Text>
+        </Card>
+      </section>
+
+      {/* Testimonial Component  */}
+      <section className="section--testimonial">
+        <Testimonial
+          image="./Image.png"
+          alt="headshot of a smiling person giving the testimonial"
+        >
+          <Testimonial.Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna
+            nulla vitae laoreet augue. Amet feugiat est integer dolor auctor
+            adipiscing nunc urna, sit.
+          </Testimonial.Text>
+          <Testimonial.Name>May Andersons</Testimonial.Name>
+          <Testimonial.Job>Workcation, CTO</Testimonial.Job>
+        </Testimonial>
       </section>
     </>
   );
