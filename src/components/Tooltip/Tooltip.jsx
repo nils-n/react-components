@@ -17,10 +17,18 @@ export default function Tooltip({
     dark: darkmode === "dark",
   });
 
+  const iconClasses = classNames({
+    "tooltip--icon": true,
+    "black-accent": color === "black",
+    "darkblue-accent": color === "darkblue",
+    "purple-accent": color === "purple",
+    "darkgreen-accent": color === "darkgreen",
+  });
+
   return (
     <div className={tooltipClasses}>
       <div className="tooltip--triangle"></div>
-      <div className="tooltip--icon">
+      <div className={iconClasses}>
         <HiArchiveBox />
       </div>
       <div className="tooltip--title">{title}</div>
