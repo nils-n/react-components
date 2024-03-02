@@ -7,7 +7,5 @@ export default function Badge({ color = "gray", shape = "square", children }) {
     badge: true,
   });
 
-  console.log(badgeClass);
-
   return <div className={badgeClass}>{children}</div>;
 }

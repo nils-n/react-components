@@ -6,6 +6,7 @@ import Badge from "./components/Badge.jsx";
 import Banner from "./components/Banner/index.jsx";
 import Card from "./components/Card/index.jsx";
 import Testimonial from "./components/Testimonial/index.jsx";
+import Tooltip from "./components/Tooltip/Tooltip.jsx";
 
 function App() {
   return (
@@ -113,6 +114,30 @@ function App() {
           <Testimonial.Name>May Andersons</Testimonial.Name>
           <Testimonial.Job>Workcation, CTO</Testimonial.Job>
         </Testimonial>
+      </section>
+
+      {/* Tooltip Component  */}
+      <section className="section--tooltip">
+        <Tooltip
+          title="Archive notes"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+          color="black"
+        ></Tooltip>
+        <Tooltip
+          title="Archive notes"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+          color="darkblue"
+        ></Tooltip>
+        <Tooltip
+          title="Archive notes"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+          color="purple"
+        ></Tooltip>
+        <Tooltip
+          title="Archive notes"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+          color="darkgreen"
+        ></Tooltip>
       </section>
     </>
   );

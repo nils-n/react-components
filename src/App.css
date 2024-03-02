@@ -42,26 +42,7 @@
   color: #888;
 }
 
-/* Badge Component */
-.section--badges {
-  display: flex;
-  gap: 1em;
-  flex-wrap: wrap;
-  padding: 1em 0;
-}
-
-.badge {
-  padding: 0.125em 0.75em;
-  width: max-content;
-  min-width: 4.18rem;
-  min-height: 1.5em;
-  border-radius: 0.25em;
-}
-
-.pill {
-  border-radius: 0.75em;
-}
-
+/*  Colors */
 .gray {
   color: #1f2937;
   background: #f3f4f6;
@@ -97,6 +78,46 @@
 .pink {
   color: #9d174d;
   background: #fce7f3;
+}
+
+.black {
+  color: #c7c7c7;
+  background: #262626;
+}
+
+.darkblue {
+  color: #e8edff;
+  background: #1e40af;
+}
+
+.purple {
+  color: #ffe9fd;
+  background: #a9229b;
+}
+
+.darkgreen {
+  color: #d8d8d8;
+  background: #47aa5d;
+}
+
+/* Badge Component */
+.section--badges {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  padding: 1em 0;
+}
+
+.badge {
+  padding: 0.125em 0.75em;
+  width: max-content;
+  min-width: 4.18rem;
+  min-height: 1.5em;
+  border-radius: 0.25em;
+}
+
+.pill {
+  border-radius: 0.75em;
 }
 
 /* Badge Component */
@@ -268,6 +289,72 @@
   text-align: left;
   margin-bottom: 4em;
 }
+
+/* Tooltip Component */
+.section--tooltip {
+  margin: 6em 0 4em;
+  display: flex;
+  gap: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tooltip {
+  display: grid;
+  grid-template-areas: "icon title cross" " . text .";
+  grid-template-columns: 52px auto 46px;
+  grid-template-rows: 1.7em 1fr;
+  max-width: 384px;
+  padding: 1em;
+  border-radius: 8px;
+  font-size: 0.875em;
+  position: relative;
+}
+
+.tooltip--icon {
+  grid-area: icon;
+  margin-top: 0.2em;
+}
+
+tooltip--icon svg {
+  height: 20px;
+  width: 20px;
+}
+
+.tooltip--title {
+  grid-area: title;
+  text-align: left;
+  font-weight: 500;
+}
+
+.tooltip--text {
+  grid-area: text;
+  text-align: left;
+}
+
+.tooltip--cross {
+  grid-area: cross;
+  margin-top: 0.2em;
+}
+
+.tooltip--cross svg {
+  height: 20px;
+  width: 20px;
+}
+
+.tooltip--triangle {
+  width: 20px;
+  height: 20px;
+  background-color: inherit;
+  position: absolute;
+  bottom: 0;
+  left: 54px;
+  transform: translateX(50%) translateY(50%) rotate(45deg);
+  z-index: -1;
+}
+
+/* Media Queries */
 
 /* work mobile first - temporarily disable desktop version */
 @media (min-width: 500px) {

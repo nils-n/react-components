@@ -18,8 +18,6 @@ export default function Banner({ children, status = "neutral" }) {
     [`icon-${status}`]: true,
   });
 
-  console.log(bannerClasses);
-
   return (
     <div className={bannerClasses}>
       <div className={iconClasses}>
