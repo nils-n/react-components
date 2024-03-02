@@ -272,6 +272,6 @@
 /* work mobile first - temporarily disable desktop version */
 @media (min-width: 500px) {
   .testimonial {
-    display: none;
+    max-width: 400px;
   }
 }
