@@ -2,6 +2,8 @@ import classNames from "classnames";
 import { HiXMark } from "react-icons/hi2";
 import { HiArchiveBox } from "react-icons/hi2";
 import { useState } from "react";
+import { useContext } from "react";
+import { DarkmodeContext } from "../../App";
 
 export default function Tooltip({
   title,
@@ -10,6 +12,7 @@ export default function Tooltip({
   darkmode = "light",
 }) {
   const [visible, setVisible] = useState(true);
+  const { darkMode } = useContext(DarkmodeContext);
 
   function dismissTooltip() {
     setVisible((prev) => !prev);
@@ -21,7 +24,7 @@ export default function Tooltip({
     darkblue: color === "darkblue",
     darkpurple: color === "darkpurple",
     darkgreen: color === "darkgreen",
-    dark: darkmode === "dark",
+    dark: (darkmode === darkMode) === "dark",
     hidden: !visible,
   });
 

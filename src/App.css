@@ -82,6 +82,11 @@
 }
 
 .black {
+  background: #c7c7c7;
+  color: #262626;
+}
+
+.dark .black {
   color: #c7c7c7;
   background: #262626;
 }
