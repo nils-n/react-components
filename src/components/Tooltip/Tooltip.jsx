@@ -19,7 +19,7 @@ export default function Tooltip({
     tooltip: true,
     black: color === "black",
     darkblue: color === "darkblue",
-    purple: color === "purple",
+    darkpurple: color === "darkpurple",
     darkgreen: color === "darkgreen",
     dark: darkmode === "dark",
     hidden: !visible,
@@ -29,7 +29,7 @@ export default function Tooltip({
     "tooltip--icon": true,
     "black-accent": color === "black",
     "darkblue-accent": color === "darkblue",
-    "purple-accent": color === "purple",
+    "darkpurple-accent": color === "darkpurple",
     "darkgreen-accent": color === "darkgreen",
   });
 
