@@ -18,7 +18,7 @@ export default function Toggler() {
       <p className="toggler-light ">
         <HiMiniSun />
       </p>
-      <div className="toggler--slider " onClick={toggleDarkmode}>
+      <div className="toggler--slider" onClick={toggleDarkmode}>
         <div className="toggler--slider-circle "></div>
       </div>
       <p className="toggler-dark">

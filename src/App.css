@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -387,6 +388,9 @@
 }
 
 .toggler {
+  position: fixed;
+  top: 30px;
+  right: 30px;
   display: flex;
   align-items: top;
 }
@@ -401,6 +405,18 @@
   height: 1.5em;
 }
 
+.toggler-dark {
+  color: #767676;
+}
+
+.dark .toggler-dark {
+  color: #242424;
+}
+
+.dark .toggler-light {
+  color: #767676;
+}
+
 .toggler--slider {
   width: 4em;
   height: 1.5em;
@@ -408,20 +424,27 @@
   border-radius: 2em;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .light .toggler--slider {
-  /* background-color: #e5e7eb; */
   background-color: #242424;
   border: 1px solid white;
 }
 
 .toggler--slider-circle {
+  position: absolute;
+  top: 0;
+  left: 40px;
   background-color: #242424;
   width: 21px;
   height: 21px;
   border-radius: 100%;
   border: 1px solid white;
+}
+
+.dark .toggler--slider-circle {
+  left: 0px;
 }
 
 .light .toggler--slider-circle {
