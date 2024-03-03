@@ -371,6 +371,64 @@
   z-index: -1;
 }
 
+.hidden {
+  display: none;
+}
+
+/* Toggler Component */
+
+.section--toggler {
+  margin: 6em 0 4em;
+  display: flex;
+  gap: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.toggler {
+  display: flex;
+  align-items: top;
+}
+
+.toggler p {
+  margin: 0;
+  padding: 0 0.5em;
+}
+
+.toggler svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.toggler--slider {
+  width: 4em;
+  height: 1.5em;
+  background-color: white;
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.light .toggler--slider {
+  /* background-color: #e5e7eb; */
+  background-color: #242424;
+  border: 1px solid white;
+}
+
+.toggler--slider-circle {
+  background-color: #242424;
+  width: 21px;
+  height: 21px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.light .toggler--slider-circle {
+  background-color: #e5e7eb;
+  border: 1px solid #242424;
+}
+
 /* Media Queries */
 
 /* work mobile first - temporarily disable desktop version */
@@ -429,8 +487,4 @@
   .testimonial--job {
     margin-bottom: 4rem;
   }
-}
-
-.hidden {
-  display: none;
 }

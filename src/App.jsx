@@ -7,11 +7,19 @@ import Banner from "./components/Banner/index.jsx";
 import Card from "./components/Card/index.jsx";
 import Testimonial from "./components/Testimonial/index.jsx";
 import Tooltip from "./components/Tooltip/Tooltip.jsx";
+import Toggler from "./components/Toggler/Toggler.jsx";
+import { useEffect } from "react";
 
 function App() {
   return (
-    <>
+    <main>
       <h1>Component Library</h1>
+
+      {/* Toggler Component  */}
+      <section className="section--toggler">
+        <Toggler></Toggler>
+      </section>
+
       {/* Badge Component  */}
       <section className="section--badges">
         <Badge color="red">Badge</Badge>
@@ -139,7 +147,7 @@ function App() {
           color="darkgreen"
         ></Tooltip>
       </section>
-    </>
+    </main>
   );
 }
 
