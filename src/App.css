@@ -351,6 +351,8 @@
 .tooltip--cross {
   grid-area: cross;
   margin-top: 0.2em;
+  padding: 0;
+  background: rgba(0, 0, 0, 0);
 }
 
 .tooltip--cross svg {
@@ -427,4 +429,8 @@
   .testimonial--job {
     margin-bottom: 4rem;
   }
+}
+
+.hidden {
+  display: none;
 }

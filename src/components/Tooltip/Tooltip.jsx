@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { HiXMark } from "react-icons/hi2";
 import { HiArchiveBox } from "react-icons/hi2";
+import { useState } from "react";
 
 export default function Tooltip({
   title,
@@ -8,6 +9,12 @@ export default function Tooltip({
   color = "green",
   darkmode = "light",
 }) {
+  const [visible, setVisible] = useState(true);
+
+  function dismissTooltip() {
+    setVisible((prev) => !prev);
+  }
+
   const tooltipClasses = classNames({
     tooltip: true,
     black: color === "black",
@@ -15,6 +22,7 @@ export default function Tooltip({
     purple: color === "purple",
     darkgreen: color === "darkgreen",
     dark: darkmode === "dark",
+    hidden: !visible,
   });
 
   const iconClasses = classNames({
@@ -33,9 +41,9 @@ export default function Tooltip({
       </div>
       <div className="tooltip--title">{title}</div>
       <div className="tooltip--text">{text}</div>
-      <div className="tooltip--cross">
+      <button className="tooltip--cross" onClick={dismissTooltip}>
         <HiXMark />
-      </div>
+      </button>
     </div>
   );
 }
