@@ -13,8 +13,6 @@ export default function Toggler() {
     dark: darkMode === "dark",
   });
 
-  console.log("Tooltip --> darkmode ", darkMode);
-
   return (
     <div className={togglerClasses}>
       <p className="toggler-light ">
