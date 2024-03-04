@@ -7,8 +7,8 @@ export function useDarkmode({ initial = "dark" }) {
     setDarkMode((prev) => (prev === "dark" ? "light" : "dark"));
 
     darkMode == "dark"
-      ? (document.querySelector("#root").style.backgroundColor = "#E5E7EB")
-      : (document.querySelector("#root").style.backgroundColor = "#242424");
+      ? (document.querySelector("body").style.backgroundColor = "#E5E7EB")
+      : (document.querySelector("body").style.backgroundColor = "#242424");
   }
 
   return [darkMode, toggleDarkmode];
