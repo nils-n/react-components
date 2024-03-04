@@ -36,15 +36,31 @@ export default function Tooltip({
     "darkgreen-accent": color === "darkgreen",
   });
 
+  const titleClasses = classNames({
+    "tooltip--title": true,
+    "black-title": color === "black",
+    "darkblue-title": color === "darkblue",
+    "darkpurple-title": color === "darkpurple",
+    "darkgreen-title": color === "darkgreen",
+  });
+
+  const crossClasses = classNames({
+    "tooltip--cross": true,
+    "black-title": color === "black",
+    "darkblue-title": color === "darkblue",
+    "darkpurple-title": color === "darkpurple",
+    "darkgreen-title": color === "darkgreen",
+  });
+
   return (
     <div className={tooltipClasses}>
       <div className="tooltip--triangle"></div>
       <div className={iconClasses}>
         <HiArchiveBox />
       </div>
-      <div className="tooltip--title">{title}</div>
+      <div className={titleClasses}>{title}</div>
       <div className="tooltip--text">{text}</div>
-      <button className="tooltip--cross" onClick={dismissTooltip}>
+      <button className={crossClasses} onClick={dismissTooltip}>
         <HiXMark />
       </button>
     </div>

@@ -43,7 +43,7 @@
   color: #888;
 }
 
-/*  Colors */
+/*  Badge Colors */
 .gray {
   color: #1f2937;
   background: #f3f4f6;
@@ -81,18 +81,31 @@
   background: #fce7f3;
 }
 
-.black {
-  background: #c7c7c7;
+/* Tooltip colors */
+.dark .black {
+  background: white;
   color: #262626;
 }
 
-.dark .black {
+.dark .black-accent {
+  color: #c7c7c7;
+}
+
+.dark .black-title {
+  color: #111827;
+}
+
+.black {
   color: #c7c7c7;
   background: #262626;
 }
 
-.black-accent {
-  color: #c7c7c7;
+.black-accent svg {
+  color: #6b7280;
+}
+
+.black-title {
+  color: white;
 }
 
 .darkblue {
@@ -104,12 +117,46 @@
   color: #7ea6f2;
 }
 
+.darkblue-title {
+  color: white;
+}
+
+.dark .darkblue-title {
+  color: #1e40af;
+}
+
+.dark .darkblue {
+  color: #1c51b9;
+  background: #e0e7ff;
+}
+
+.dark .darkblue-accent {
+  color: #1e40af;
+}
+
 .darkpurple {
   color: #ffe9fd;
   background: #a9229b;
 }
 .darkpurple-accent {
   color: #f462e6;
+}
+
+.darkpurple-title {
+  color: white;
+}
+
+.dark .darkpurple-title {
+  color: #a9229b;
+}
+
+.dark .darkpurple {
+  color: #c7369e;
+  background: #fff3fc;
+}
+
+.dark .darkpurple-accent {
+  color: #a9229b;
 }
 
 .darkgreen {
@@ -119,6 +166,23 @@
 
 .darkgreen-accent {
   color: #c1ffcf;
+}
+
+.dark .darkgreen {
+  color: #3c8c4e;
+  background: #e7fff3;
+}
+
+.dark .darkgreen-accent {
+  color: #137a2a;
+}
+
+.darkgreen-title {
+  color: white;
+}
+
+.dark .darkgreen-title {
+  color: #137a2a;
 }
 
 /* Badge Component */
@@ -374,7 +438,7 @@
   bottom: 0;
   left: 54px;
   transform: translateX(50%) translateY(50%) rotate(45deg);
-  z-index: -1;
+  z-index: 10;
 }
 
 .hidden {
@@ -393,7 +457,7 @@
 }
 
 .toggler {
-  position: fixed;
+  position: absolute;
   top: 30px;
   right: 30px;
   display: flex;
@@ -410,15 +474,15 @@
   height: 1.5em;
 }
 
-.toggler-dark {
+.dark .toggler-dark {
   color: #767676;
 }
 
-.dark .toggler-dark {
+.toggler-dark {
   color: #242424;
 }
 
-.dark .toggler-light {
+.toggler-light {
   color: #767676;
 }
 
@@ -440,7 +504,7 @@
 .toggler--slider-circle {
   position: absolute;
   top: 0;
-  left: 40px;
+  left: 0;
   background-color: #242424;
   width: 21px;
   height: 21px;
@@ -449,7 +513,7 @@
 }
 
 .dark .toggler--slider-circle {
-  left: 0px;
+  left: 40px;
 }
 
 .light .toggler--slider-circle {

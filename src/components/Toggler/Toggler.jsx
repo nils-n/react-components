@@ -9,9 +9,11 @@ export default function Toggler() {
 
   const togglerClasses = classNames({
     toggler: true,
-    light: darkMode == "light",
-    dark: darkMode == "dark",
+    light: darkMode === "light",
+    dark: darkMode === "dark",
   });
+
+  console.log("Tooltip --> darkmode ", darkMode);
 
   return (
     <div className={togglerClasses}>
